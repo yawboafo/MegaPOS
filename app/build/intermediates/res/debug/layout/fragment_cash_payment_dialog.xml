@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/confirmpayment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="400dp"
+    android:layout_height="match_parent"
+    android:padding="30dp">
+
+
+    <RelativeLayout
+        android:id="@+id/Mastercontainerfrag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        android:padding="20dp"
+        android:layout_below="@+id/txtDialogTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:background="@drawable/summary_display_border"
+            android:id="@+id/containerfrag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:padding="20dp"
+            android:visibility="gone">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Tax :"
+                android:id="@+id/txtTax"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/txtDiscount"
+                android:layout_alignStart="@+id/txtDiscount"
+                android:textColor="@android:color/background_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Discount :"
+                android:id="@+id/txtDiscount"
+                android:layout_below="@+id/txtTax"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@android:color/background_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Total :"
+                android:id="@+id/txtTotal"
+                android:layout_below="@+id/txtDiscount"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@android:color/background_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="00.0"
+                android:id="@+id/TaxValue"
+                android:textColor="#ffff1b00"
+                android:layout_alignLeft="@+id/DiscountValue"
+                android:layout_alignStart="@+id/DiscountValue"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/DiscountValue"
+                android:layout_alignEnd="@+id/DiscountValue"
+                android:gravity="end" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="00.0"
+                android:id="@+id/DiscountValue"
+                android:textColor="#ffff1b00"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_above="@+id/TotalValue"
+                android:layout_toRightOf="@+id/txtDiscount"
+                android:layout_toEndOf="@+id/txtDiscount"
+                android:gravity="end" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="00.0"
+                android:id="@+id/TotalValue"
+                android:layout_below="@+id/txtDiscount"
+                android:textColor="#ffff1b00"
+                android:layout_alignRight="@+id/DiscountValue"
+                android:layout_alignEnd="@+id/DiscountValue"
+                android:layout_toRightOf="@+id/txtTotal"
+                android:layout_toEndOf="@+id/txtTotal"
+                android:gravity="right" />
+
+
+        </RelativeLayout>
+
+        <EditText
+            android:hint="enter cash amount"
+            android:background="@color/textColorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/editAmount"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_below="@+id/containerfrag"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lessbutcontain"
+            android:layout_below="@+id/editAmount"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:visibility="gone">
+
+            <Spinner
+                style="@style/btnStylemedium_wood"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:id="@+id/mobileMoneyTelcos"
+                android:layout_alignRight="@+id/butPay"
+                android:layout_alignEnd="@+id/butPay"
+                android:layout_margin="5dp"
+                android:spinnerMode="dropdown"
+                android:padding="10dp" />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:text="Pay"
+                android:id="@+id/butPay"
+
+                android:layout_below="@+id/mobileMoneyTelcos"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textStyle="bold"
+                android:layout_alignRight="@+id/butcheckout"
+                android:layout_alignEnd="@+id/butcheckout"
+                android:visibility="visible"
+                android:layout_margin="5dp" />
+
+            <Button
+
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:text="Checkout"
+                android:id="@+id/butcheckout"
+                android:layout_below="@+id/butPay"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone" />
+
+            <Button
+
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:text="CheckOut"
+                android:id="@+id/printbut"
+                android:padding="5dp"
+                android:layout_below="@+id/butcheckout"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="5dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <Button
+
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="CASH"
+            android:id="@+id/butPayCash"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="MOBILE"
+            android:id="@+id/butPayMobile"
+            android:layout_below="@+id/butPayCash"
+            android:layout_alignLeft="@+id/butPayCash"
+            android:layout_alignStart="@+id/butPayCash" />
+
+        <Button
+
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="CARD"
+            android:id="@+id/butPayCard"
+            android:layout_below="@+id/butPayMobile"
+            android:layout_alignLeft="@+id/butPayMobile"
+            android:layout_alignStart="@+id/butPayMobile"
+            android:layout_marginTop="10dp" />
+
+        <Button
+
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="Back"
+            android:id="@+id/butBack"
+            android:layout_below="@+id/lessbutcontain"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <TextView
+
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="CHECK OUT"
+        android:id="@+id/txtDialogTitle"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/Mastercontainerfrag"
+        android:layout_alignEnd="@+id/Mastercontainerfrag" />
+
+</RelativeLayout><!-- From: file:/C:/Users/bigfire/AndroidStudioProjects/MEGAPOS/app/src/main/res/layout/fragment_cash_payment_dialog.xml -->

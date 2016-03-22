@@ -1,0 +1,70 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="1dp"
+    android:padding="5dp">
+
+    <CheckBox
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/itemchk"
+        android:button="@xml/custom_checkbox"
+        android:checked="false"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/itemqty"
+        android:layout_toEndOf="@+id/itemqty" />
+
+
+    <TextView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/itemname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Name"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@+id/itemqty"
+        android:layout_toRightOf="@+id/itemchk"
+        android:layout_toLeftOf="@+id/itemcost"
+        android:layout_toStartOf="@+id/itemcost"
+        android:clickable="true" />
+
+    <Button
+
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:text=""
+        android:id="@+id/itemqty"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="GHC 2,000,00"
+        android:id="@+id/itemcost"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:gravity="end|right"
+        android:layout_alignBottom="@+id/itemchk"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/itemchk"
+        android:layout_alignLeft="@+id/itemchk"
+        android:layout_alignStart="@+id/itemchk"
+        android:layout_alignRight="@+id/itemcost"
+        android:layout_alignEnd="@+id/itemcost"
+        android:background="#3b3c3c"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp" />
+
+</RelativeLayout>

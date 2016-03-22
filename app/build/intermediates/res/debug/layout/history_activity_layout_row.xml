@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/textlines"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sunday 23,2015"
+        android:id="@+id/txtDate"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="2dp"
+        android:textStyle="bold"
+        android:textColor="#ffff0b09" />
+
+    <ImageView
+        android:src="@drawable/forward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgIcon"
+        android:layout_below="@+id/txtDate"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Total Sales : Ghs 200,00.0"
+        android:id="@+id/txtSales"
+        android:layout_below="@+id/txtDate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="2dp"
+        android:textStyle="bold" />
+</RelativeLayout><!-- From: file:/C:/Users/bigfire/AndroidStudioProjects/MEGAPOS/app/src/main/res/layout/history_activity_layout_row.xml -->

@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.nfortics.megapos.Dialogs.AddFavorite"
+    android:id="@+id/option">
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add To Cart"
+        android:id="@+id/buttAddCart"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add to Favorite"
+        android:id="@+id/butAddFav"
+        android:layout_below="@+id/buttAddCart"
+        android:layout_alignRight="@+id/buttAddCart"
+        android:layout_alignEnd="@+id/buttAddCart" />
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/bigfire/AndroidStudioProjects/MEGAPOS/app/src/main/res/layout/fragment_add_favorite.xml -->

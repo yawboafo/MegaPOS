@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:text="CCML"
+        android:id="@+id/butAfirm"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout><!-- From: file:/C:/Users/bigfire/AndroidStudioProjects/MEGAPOS/app/src/main/res/layout/registered_firms_row.xml -->

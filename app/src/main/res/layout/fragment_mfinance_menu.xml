@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+   android:orientation="vertical"
+    tools:context="com.nfortics.megapos.Fragments.MfinanceMenu">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView android:layout_width="wrap_content"
+
+        android:id="@+id/titleLabel"
+        android:layout_height="40dp"
+        android:text="A fragment "
+        android:textAlignment="gravity"
+        android:layout_alignRight="@+id/menuActions"
+        android:layout_alignEnd="@+id/menuActions"
+        android:layout_toEndOf="@+id/imageBckButt"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:paddingTop="5dp"
+        android:textColor="#fa0d0200"
+        android:gravity="center_horizontal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/menuActions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="6dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_below="@+id/titleLabel">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <ImageButton
+        android:src="@drawable/back"
+        android:layout_width="80dp"
+        android:layout_weight="0.5"
+        android:layout_height="50dp"
+        android:id="@+id/imageBckButt"
+        android:layout_above="@+id/menuActions"
+        android:layout_alignLeft="@+id/menuActions"
+        android:layout_alignStart="@+id/menuActions"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+        android:layout_alignParentTop="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

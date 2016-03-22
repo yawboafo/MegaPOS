@@ -1,0 +1,364 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="430dp"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+
+        tools:context="com.nfortics.megapos.Dialogs.AirTime">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/AcenterMainButtonHolder"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_below="@+id/txtDialogTitle">
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="AIRTIME"
+        android:id="@+id/dialogTitle"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_margin="5dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Provider :"
+        android:id="@+id/txtProvidersLabel"
+       android:layout_below="@+id/dialogTitle"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:layout_margin="5dp" />
+    <Spinner
+        style="@style/btnStylemedium_wood"
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:popupBackground="#ffffe58e"
+        android:layout_below="@+id/txtProvidersLabel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Top up Mode :"
+        android:id="@+id/txtTopUpModeLabel"
+        android:layout_below="@+id/spinner1"
+        android:layout_alignLeft="@+id/spinner1"
+        android:layout_alignStart="@+id/spinner1"
+        android:layout_margin="5dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        style="@style/btnStylemedium_wood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/topUpModeSpinner"
+        android:layout_below="@+id/txtTopUpModeLabel"
+        android:layout_alignRight="@+id/spinner1"
+        android:layout_alignEnd="@+id/spinner1"
+        android:layout_margin="5dp"
+        android:padding="15dp"
+        android:popupBackground="#ffffe58e" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topUpModeSpinner"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/inputValuesLayout"
+        android:layout_margin="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Enter Customer Mobile Number :"
+            android:id="@+id/txtCustomerMobileNum"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="5dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:hint="Customer Mobile Number"
+            android:id="@+id/editCustomerMnumber"
+            android:layout_below="@+id/txtCustomerMobileNum"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Enter Amount :"
+            android:id="@+id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editCustomerMnumber"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="5dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:hint="Amount(eg 2.00)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/edtEnterAmount"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="5dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topUpModeSpinner"
+        android:layout_alignLeft="@+id/txtTopUpModeLabel"
+        android:layout_alignStart="@+id/txtTopUpModeLabel"
+        android:id="@+id/inputValuesLayout1"
+        android:visibility="gone">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Enter Customer Mobile Number :"
+            android:id="@+id/AtxtCustomerMobileNum"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="5dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:hint="Customer Mobile Number"
+            android:id="@+id/AeditCustomerMnumber"
+            android:layout_below="@+id/AtxtCustomerMobileNum"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Enter Amount :"
+            android:id="@+id/AtextView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/AeditCustomerMnumber"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="5dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:hint="Amount(eg 2.00)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/AedtEnterAmount"
+            android:layout_below="@+id/AtextView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Account Number :"
+            android:id="@+id/txtAccountNumberLabel"
+            android:layout_below="@+id/AedtEnterAmount"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/AedtEnterAmount"
+            android:layout_alignEnd="@+id/AedtEnterAmount"
+            android:layout_margin="5dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/AedtAccountNumberValue"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtAccountNumberLabel"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="5dp"
+            android:hint="Acc Number eg (account number)" />
+
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/dialogTitle"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/confirmLayout"
+            android:visibility="gone">
+
+            <Button
+                style="@style/cashBut"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:id="@+id/confirmButtonYes"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                style="@style/btnStyleRed"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/confirmButtonNo"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_above="@+id/confirmButtonYes"
+                android:layout_alignParentTop="true"
+                android:id="@+id/confirmScreen"
+                android:background="#ff000000"
+                android:padding="10dp"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/confirm1"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center_horizontal"
+                    android:textColor="#fff9fdff"
+                    android:padding="2dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/confirm2"
+                    android:layout_below="@+id/confirm1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="#fff9fdff"
+                    android:padding="2dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/confirm3"
+                    android:layout_below="@+id/confirm2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="#fff9fdff"
+                    android:padding="2dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/confirm4"
+                    android:layout_below="@+id/confirm3"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="#fff9fdff"
+                    android:padding="2dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/finalButtonLayout"
+        android:layout_below="@+id/AcenterMainButtonHolder"
+        android:layout_centerHorizontal="true">
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:padding="5dp"
+            android:text="Submit"
+            android:id="@+id/butSubmit"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:padding="5dp"
+            android:text="Close"
+            android:id="@+id/butClose"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_alignBottom="@+id/butSubmit"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/bigfire/AndroidStudioProjects/MEGAPOS/app/src/main/res/layout/fragment_air_time.xml -->

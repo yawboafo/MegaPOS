@@ -1,0 +1,235 @@
+TASK com.nfortics.megapos id=22
+  ACTIVITY com.nfortics.megapos/.Activities.Home 41af15a8 pid=17762
+    Local FragmentActivity 41884168 State:
+      mCreated=truemResumed=true mStopped=false mReallyStopped=false
+      mLoadersStarted=true
+    Active Fragments in 418854e0:
+      #0: NavigationDrawerFragment{4187c160 #0 id=0x7f0f006c}
+        mFragmentId=#7f0f006c mContainerId=#0 mTag=null
+        mState=5 mIndex=0 mWho=android:fragment:0 mBackStackNesting=0
+        mAdded=true mRemoving=false mResumed=true mFromLayout=true mInLayout=true
+        mHidden=false mDetached=false mMenuVisible=true mHasMenu=false
+        mRetainInstance=false mRetaining=false mUserVisibleHint=true
+        mFragmentManager=FragmentManager{418854e0 in Home{41884168}}
+        mActivity=com.nfortics.megapos.Activities.Home@41884168
+        mView=android.widget.RelativeLayout@41887100
+        mInnerView=android.widget.RelativeLayout@41887100
+        Child FragmentManager{41812ad0 in NavigationDrawerFragment{4187c160}}:
+          FragmentManager misc state:
+            mActivity=com.nfortics.megapos.Activities.Home@41884168
+            mContainer=android.support.v4.app.Fragment$1@41815548
+            mParent=NavigationDrawerFragment{4187c160 #0 id=0x7f0f006c}
+            mCurState=5 mStateSaved=false mDestroyed=false
+      #1: PosTopLayout{418f4c20 #1 id=0x7f0f006a postoplayer}
+        mFragmentId=#7f0f006a mContainerId=#7f0f006a mTag=postoplayer
+        mState=5 mIndex=1 mWho=android:fragment:1 mBackStackNesting=0
+        mAdded=true mRemoving=false mResumed=true mFromLayout=false mInLayout=false
+        mHidden=false mDetached=false mMenuVisible=true mHasMenu=false
+        mRetainInstance=false mRetaining=false mUserVisibleHint=true
+        mFragmentManager=FragmentManager{418854e0 in Home{41884168}}
+        mActivity=com.nfortics.megapos.Activities.Home@41884168
+        mContainer=android.widget.FrameLayout@4182cdf0
+        mView=android.widget.RelativeLayout@418f5848
+        mInnerView=android.widget.RelativeLayout@418f5848
+        Child FragmentManager{417f94f8 in PosTopLayout{418f4c20}}:
+          FragmentManager misc state:
+            mActivity=com.nfortics.megapos.Activities.Home@41884168
+            mContainer=android.support.v4.app.Fragment$1@41814f90
+            mParent=PosTopLayout{418f4c20 #1 id=0x7f0f006a postoplayer}
+            mCurState=5 mStateSaved=false mDestroyed=false
+      #2: StartFragment{41901460 #2 id=0x7f0f006b android:switcher:2131689579:0}
+        mFragmentId=#7f0f006b mContainerId=#7f0f006b mTag=android:switcher:2131689579:0
+        mState=5 mIndex=2 mWho=android:fragment:2 mBackStackNesting=0
+        mAdded=true mRemoving=false mResumed=true mFromLayout=false mInLayout=false
+        mHidden=false mDetached=false mMenuVisible=false mHasMenu=false
+        mRetainInstance=false mRetaining=false mUserVisibleHint=false
+        mFragmentManager=FragmentManager{418854e0 in Home{41884168}}
+        mActivity=com.nfortics.megapos.Activities.Home@41884168
+        mContainer=android.support.v4.view.ViewPager@4188a0d0
+        mView=android.widget.RelativeLayout@41906870
+        mInnerView=android.widget.RelativeLayout@41906870
+        Child FragmentManager{41901bf8 in StartFragment{41901460}}:
+          FragmentManager misc state:
+            mActivity=com.nfortics.megapos.Activities.Home@41884168
+            mContainer=android.support.v4.app.Fragment$1@41890c50
+            mParent=StartFragment{41901460 #2 id=0x7f0f006b android:switcher:2131689579:0}
+            mCurState=5 mStateSaved=false mDestroyed=false
+      #3: LastFragment{418f46a8 #3 id=0x7f0f006b android:switcher:2131689579:1}
+        mFragmentId=#7f0f006b mContainerId=#7f0f006b mTag=android:switcher:2131689579:1
+        mState=5 mIndex=3 mWho=android:fragment:3 mBackStackNesting=0
+        mAdded=true mRemoving=false mResumed=true mFromLayout=false mInLayout=false
+        mHidden=false mDetached=false mMenuVisible=true mHasMenu=false
+        mRetainInstance=false mRetaining=false mUserVisibleHint=true
+        mFragmentManager=FragmentManager{418854e0 in Home{41884168}}
+        mActivity=com.nfortics.megapos.Activities.Home@41884168
+        mContainer=android.support.v4.view.ViewPager@4188a0d0
+        mView=android.widget.LinearLayout@4186f2d0
+        mInnerView=android.widget.LinearLayout@4186f2d0
+        Child FragmentManager{418815e0 in LastFragment{418f46a8}}:
+          FragmentManager misc state:
+            mActivity=com.nfortics.megapos.Activities.Home@41884168
+            mContainer=android.support.v4.app.Fragment$1@41881658
+            mParent=LastFragment{418f46a8 #3 id=0x7f0f006b android:switcher:2131689579:1}
+            mCurState=5 mStateSaved=false mDestroyed=false
+      #4: CashIn{41a2b498 #4 }
+        mFragmentId=#0 mContainerId=#0 mTag=
+        mState=5 mIndex=4 mWho=android:fragment:4 mBackStackNesting=0
+        mAdded=true mRemoving=false mResumed=true mFromLayout=false mInLayout=false
+        mHidden=false mDetached=false mMenuVisible=true mHasMenu=false
+        mRetainInstance=false mRetaining=false mUserVisibleHint=true
+        mFragmentManager=FragmentManager{418854e0 in Home{41884168}}
+        mActivity=com.nfortics.megapos.Activities.Home@41884168
+        mArguments=Bundle[{param1=, param2=}]
+        mView=android.widget.RelativeLayout@41a47d88
+        mInnerView=android.widget.RelativeLayout@41a47d88
+    Added Fragments:
+      #0: NavigationDrawerFragment{4187c160 #0 id=0x7f0f006c}
+      #1: PosTopLayout{418f4c20 #1 id=0x7f0f006a postoplayer}
+      #2: StartFragment{41901460 #2 id=0x7f0f006b android:switcher:2131689579:0}
+      #3: LastFragment{418f46a8 #3 id=0x7f0f006b android:switcher:2131689579:1}
+      #4: CashIn{41a2b498 #4 }
+    FragmentManager misc state:
+      mActivity=com.nfortics.megapos.Activities.Home@41884168
+      mContainer=android.support.v4.app.FragmentActivity$2@41885e10
+      mCurState=5 mStateSaved=false mDestroyed=false
+    View Hierarchy:
+      com.android.internal.policy.impl.PhoneWindow$DecorView{4188d820 V.E..... ... 0,0-768,976}
+        android.widget.LinearLayout{4188f000 V.E..... ... 0,0-768,976}
+          android.view.ViewStub{4188fb40 G.E..... ... 0,0-0,0 #1020314}
+          android.widget.FrameLayout{4188fdb0 V.E..... ... 0,0-768,976}
+            android.support.v7.internal.widget.FitWindowsLinearLayout{41892910 V.E..... ... 0,0-768,976 #7f0f0053 app:id/action_bar_root}
+              android.support.v7.internal.widget.ViewStubCompat{418930f0 G.E..... ... 0,0-0,0 #7f0f0054 app:id/action_mode_bar_stub}
+              android.support.v7.internal.widget.ContentFrameLayout{41893958 V.ED.... ... 0,0-768,976 #1020002 android:id/content}
+                android.support.v4.widget.DrawerLayout{41899ea8 VFE..... ... 0,0-768,976 #7f0f0067 app:id/drawer_layout}
+                  android.widget.RelativeLayout{4185e810 V.E..... ... 0,0-768,976}
+                    android.widget.LinearLayout{417f8ea8 V.E..... ... 0,0-768,64 #7f0f0068 app:id/container_toolbar}
+                      android.support.v7.widget.Toolbar{4185c3c8 V.E..... ... 0,0-768,64 #7f0f0069 app:id/app_bar}
+                        android.widget.TextView{418efc20 V.ED.... ... 60,18-170,46}
+                        android.support.v7.widget.ActionMenuView{41938140 V.E..... ... 732,4-768,60}
+                          android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton{4193a3a0 VFED..C. ... 0,4-36,52}
+                        android.widget.ImageButton{418ecda0 VFED..C. ... 0,4-56,60}
+                    android.widget.FrameLayout{4182cdf0 V.E..... ... 0,64-768,514 #7f0f006a app:id/TopLayout}
+                      android.widget.RelativeLayout{418f5848 V.E..... ... 0,0-759,450}
+                        android.widget.RelativeLayout{41866e28 V.E..... ... 7,7-248,374 #7f0f013e app:id/itemsSummary}
+                          android.support.v7.widget.AppCompatTextView{41898508 V.ED.... ... 8,10-233,44 #7f0f0140 app:id/txtSubTotalLabel}
+                          android.support.v7.widget.AppCompatTextView{418e70b8 V.ED.... ... 8,48-233,82 #7f0f0141 app:id/txtSubTotalValue}
+                          android.support.v7.widget.AppCompatTextView{418ec4f0 V.ED.... ... 8,86-233,120 #7f0f0142 app:id/txtTaxLabel}
+                          android.support.v7.widget.AppCompatTextView{4187e798 V.ED.... ... 8,124-233,158 #7f0f0143 app:id/txtTaxValue}
+                          android.support.v7.widget.AppCompatTextView{418f1190 V.ED.... ... 8,162-233,196 #7f0f0144 app:id/txtDiscountLabel}
+                          android.support.v7.widget.AppCompatTextView{418f14c8 V.ED.... ... 8,200-233,234 #7f0f0145 app:id/txtDiscountValue}
+                          android.support.v7.widget.AppCompatTextView{418f1b10 V.ED.... ... 8,238-233,272 #7f0f0146 app:id/txtTotalLabel}
+                          android.support.v7.widget.AppCompatTextView{418f2178 V.ED.... ... 8,276-233,310 #7f0f0147 app:id/txtTotalValue}
+                        android.support.v7.widget.RecyclerView{41879d80 VFED.... F.. 253,8-757,376 #7f0f0148 app:id/preparedItems}
+                          android.widget.RelativeLayout{419110d0 V.E..... ... 6,7-498,57}
+                            android.support.v7.widget.AppCompatCheckBox{41967298 VFED..C. ... 10,5-50,44 #7f0f016b app:id/itemchk}
+                            android.support.v7.widget.AppCompatTextView{41989740 V.ED.... ... 50,5-121,45 #7f0f016c app:id/itemname}
+                            android.support.v7.widget.AppCompatButton{419abe20 VFED..C. ... 394,5-482,44 #7f0f016e app:id/itemqty}
+                            android.support.v7.widget.AppCompatTextView{419988e8 V.ED.... ... 121,5-394,45 #7f0f016d app:id/itemcost}
+                        android.support.v7.widget.AppCompatButton{418e4398 VFED..C. ... 4,376-124,446 #7f0f014b app:id/butCash}
+                        android.support.v7.widget.AppCompatButton{418ef8b8 GFED..C. ... 0,0-0,0 #7f0f014c app:id/butMobile}
+                        android.support.v7.widget.AppCompatButton{418f0e00 GFED..C. ... 0,0-0,0 #7f0f014d app:id/butCard}
+                        android.support.v7.widget.AppCompatButton{4189d838 GFED..C. ... 0,0-0,0 #7f0f014e app:id/butDiscount}
+                        android.support.v7.widget.AppCompatButton{418e30b0 VF.D..C. ... 622,376-757,446 #7f0f0149 app:id/butRemoveSelected}
+                        android.support.v7.widget.AppCompatButton{4187a0f0 VFED..C. ... 128,376-248,446 #7f0f013f app:id/butCashIn}
+                        android.support.v7.widget.AppCompatButton{4187d130 VFED..C. ... 253,376-373,446 #7f0f014a app:id/butCashOut}
+                        android.support.v7.widget.AppCompatButton{418e2790 VFED..C. ... 376,376-496,446 #7f0f0150 app:id/butAirtime}
+                        android.support.v7.widget.AppCompatButton{4189c950 VFED..C. ... 499,376-619,446 #7f0f014f app:id/butBillPay}
+                    android.support.v4.view.ViewPager{4188a0d0 VFED.... ... 0,514-768,976 #7f0f006b app:id/bottomViewpager}
+                      android.widget.RelativeLayout{41906870 V.E..... ... 1,1-767,461 #7f0f0156 app:id/startFragment}
+                        android.support.v7.widget.RecyclerView{417ebb70 VFED.... ... 5,7-761,375 #7f0f0152 app:id/itemsDisplay}
+                        android.support.v7.widget.RecyclerView{41881e50 VFED.... ... 5,375-685,455 #7f0f0153 app:id/itemSort}
+                          android.widget.RelativeLayout{41911c70 V.E..... ... 0,0-90,75}
+                            android.support.v7.widget.AppCompatTextView{41912690 VFED..C. ... 5,5-85,75 #7f0f016f app:id/txtAlphabets}
+                          android.widget.RelativeLayout{41914088 V.E..... ... 90,0-180,75}
+                            android.support.v7.widget.AppCompatTextView{41914678 VFED..C. ... 5,5-85,75 #7f0f016f app:id/txtAlphabets}
+                          android.widget.RelativeLayout{41915690 V.E..... ... 180,0-270,75}
+                            android.support.v7.widget.AppCompatTextView{41915bf8 VFED..C. ... 5,5-85,75 #7f0f016f app:id/txtAlphabets}
+                          android.widget.RelativeLayout{41916c10 V.E..... ... 270,0-360,75}
+                            android.support.v7.widget.AppCompatTextView{41917178 VFED..C. ... 5,5-85,75 #7f0f016f app:id/txtAlphabets}
+                          android.widget.RelativeLayout{41918190 V.E..... ... 360,0-450,75}
+                            android.support.v7.widget.AppCompatTextView{419186f8 VFED..C. ... 5,5-85,75 #7f0f016f app:id/txtAlphabets}
+                          android.widget.RelativeLayout{41919710 V.E..... ... 450,0-540,75}
+                            android.support.v7.widget.AppCompatTextView{41919c78 VFED..C. ... 5,5-85,75 #7f0f016f app:id/txtAlphabets}
+                          android.widget.RelativeLayout{4191ac90 V.E..... ... 540,0-630,75}
+                            android.support.v7.widget.AppCompatTextView{4191b1f8 VFED..C. ... 5,5-85,75 #7f0f016f app:id/txtAlphabets}
+                          android.widget.RelativeLayout{4191c210 V.E..... ... 630,0-720,75}
+                            android.support.v7.widget.AppCompatTextView{4191c778 VFED..C. ... 5,5-85,75 #7f0f016f app:id/txtAlphabets}
+                        android.widget.RelativeLayout{418e1730 G.E..... ... 0,0-0,0 #7f0f0157 app:id/searchLayout}
+                          android.support.v7.widget.AppCompatSpinner{4187fa40 VFED..C. ... 0,0-0,0 #7f0f0159 app:id/SortByspinner}
+                          android.support.v7.widget.AppCompatEditText{4183dd20 VFED..CL ... 0,0-0,0 #7f0f015a app:id/getQueryString}
+                        android.support.v7.widget.AppCompatButton{41897fc8 VFED..C. ... 688,375-758,452 #7f0f0158 app:id/searchButton}
+                      android.widget.LinearLayout{4186f2d0 V.E..... ... 767,1-1533,461 #7f0f007a app:id/functionPad}
+                        android.widget.LinearLayout{4186f700 V.E..... ... 16,16-750,101 #7f0f007b app:id/row1}
+                          android.support.v7.widget.AppCompatTextView{4186fad8 V.ED.... ... 0,0-734,70 #7f0f007c app:id/textView1}
+                        android.widget.LinearLayout{41870978 V.E..... ... 16,101-750,186 #7f0f007d app:id/row4}
+                          android.support.v7.widget.AppCompatButton{41870d48 VFED..C. ... 3,3-241,82 #7f0f007e app:id/button7}
+                          android.support.v7.widget.AppCompatButton{418fa8e8 VFED..C. ... 247,3-486,82 #7f0f007f app:id/button8}
+                          android.support.v7.widget.AppCompatButton{418fb558 VFED..C. ... 492,3-731,82 #7f0f0080 app:id/button9}
+                        android.widget.LinearLayout{418fc1c8 V.E..... ... 16,186-750,272 #7f0f0081 app:id/row5}
+                          android.support.v7.widget.AppCompatButton{418fc558 VFED..C. ... 3,3-241,83 #7f0f0082 app:id/button4}
+                          android.support.v7.widget.AppCompatButton{418fd1c8 VFED..C. ... 247,3-486,83 #7f0f0083 app:id/button5}
+                          android.support.v7.widget.AppCompatButton{418fde38 VFED..C. ... 492,3-731,83 #7f0f0084 app:id/button6}
+                        android.widget.LinearLayout{41861980 V.E..... ... 16,272-750,444 #7f0f0085 app:id/row6}
+                          android.widget.LinearLayout{41861d10 V.E..... ... 0,0-734,172}
+                            android.widget.LinearLayout{418620a0 V.E..... ... 0,0-734,86 #7f0f0086 app:id/linearLayout1}
+                              android.support.v7.widget.AppCompatButton{41862430 VFED..C. ... 3,3-241,83 #7f0f0087 app:id/button1}
+                              android.support.v7.widget.AppCompatButton{418630a0 VFED..C. ... 247,3-486,83 #7f0f0088 app:id/button2}
+                              android.support.v7.widget.AppCompatButton{41863d10 VFED..C. ... 492,3-731,83 #7f0f0089 app:id/button3}
+                            android.widget.LinearLayout{41864980 V.E..... ... 0,86-734,172 #7f0f008a app:id/linearLayout2}
+                              android.support.v7.widget.AppCompatButton{41864d10 VFED..C. ... 3,3-176,83 #7f0f008b app:id/button0}
+                              android.support.v7.widget.AppCompatButton{41865980 VFED..C. ... 182,3-361,83 #7f0f008c app:id/buttonDecimalPoint}
+                              android.support.v7.widget.AppCompatButton{41872c70 VFED..C. ... 367,3-546,83 #7f0f008d app:id/buttonClear}
+                              android.support.v7.widget.AppCompatButton{418738e0 VFED..C. ... 552,3-731,83 #7f0f008e app:id/buttonEquals}
+                  android.widget.RelativeLayout{41887100 I.E..... ... -460,0-0,976 #7f0f006c app:id/fragment_navigation_drawer}
+                    android.widget.LinearLayout{41888c50 V.E..... ... 0,0-460,158 #7f0f0132 app:id/nav_header_container}
+                      android.widget.RelativeLayout{41895d88 V.E..... ... 0,0-460,90 #7f0f006e app:id/relativeLayout1}
+                        android.widget.ImageView{41888fa8 V.ED.... ... 10,10-118,90 #7f0f0133 app:id/profileimg}
+                        android.support.v7.widget.AppCompatTextView{4189b918 V.ED.... ... 128,30-202,60 #7f0f0134 app:id/txtLogout}
+                      android.support.v7.widget.AppCompatTextView{4189d4f0 V.ED.... ... 30,94-265,124 #7f0f0135 app:id/txtUsername}
+                      android.support.v7.widget.AppCompatTextView{4187a800 V.ED.... ... 40,129-170,148 #7f0f0136 app:id/txtUserid}
+                    android.widget.RelativeLayout{4185f820 V.E..... ... 0,158-460,976}
+                      android.widget.LinearLayout{417fd888 V.E..... ... 0,0-460,405 #7f0f0137 app:id/ListOne}
+                        android.support.v7.widget.AppCompatTextView{41887f88 V.ED.... ... 0,0-460,55 #7f0f0138 app:id/ListOneTitle}
+                        android.support.v7.widget.RecyclerView{4189a228 VFED.... ... 0,55-460,405 #7f0f0139 app:id/drawerlistOne}
+                          android.widget.LinearLayout{4191da18 V.E...C. ... 0,0-460,67}
+                            android.widget.ImageView{4191ea18 V.ED.... ... 21,17-53,49 #7f0f0174 app:id/listicon}
+                            android.support.v7.widget.AppCompatTextView{4191edc8 V.ED.... ... 78,14-183,53 #7f0f0175 app:id/listText}
+                          android.widget.LinearLayout{41920d10 V.E...C. ... 0,67-460,134}
+                            android.widget.ImageView{41921628 V.ED.... ... 21,17-53,49 #7f0f0174 app:id/listicon}
+                            android.support.v7.widget.AppCompatTextView{41921990 V.ED.... ... 78,14-174,53 #7f0f0175 app:id/listText}
+                          android.widget.LinearLayout{419233d8 V.E...C. ... 0,134-460,201}
+                            android.widget.ImageView{41923cf0 V.ED.... ... 21,17-53,49 #7f0f0174 app:id/listicon}
+                            android.support.v7.widget.AppCompatTextView{41924058 V.ED.... ... 78,14-195,53 #7f0f0175 app:id/listText}
+                          android.widget.LinearLayout{41925eb0 V.E...C. ... 0,201-460,268}
+                            android.widget.ImageView{419267c8 V.ED.... ... 21,17-53,49 #7f0f0174 app:id/listicon}
+                            android.support.v7.widget.AppCompatTextView{41926b30 V.ED.... ... 78,14-270,53 #7f0f0175 app:id/listText}
+                          android.widget.LinearLayout{41928580 V.E...C. ... 0,268-460,335}
+                            android.widget.ImageView{41928e98 V.ED.... ... 21,17-53,49 #7f0f0174 app:id/listicon}
+                            android.support.v7.widget.AppCompatTextView{41929200 V.ED.... ... 78,14-292,53 #7f0f0175 app:id/listText}
+                      android.widget.LinearLayout{418308d8 V.E..... ... 0,405-460,818 #7f0f013a app:id/ListTwo}
+                        android.support.v7.widget.AppCompatTextView{4189dbb0 V.ED.... ... 0,0-460,55 #7f0f013b app:id/ListTwoTitle}
+                        android.support.v7.widget.RecyclerView{4189a590 VFED.... ... 0,55-460,413 #7f0f013c app:id/drawerlistTwo}
+                          android.widget.LinearLayout{4192ad00 V.E...C. ... 0,0-460,67}
+                            android.widget.ImageView{4192b618 V.ED.... ... 21,17-53,49 #7f0f0174 app:id/listicon}
+                            android.support.v7.widget.AppCompatTextView{4192b980 V.ED.... ... 78,14-248,53 #7f0f0175 app:id/listText}
+                          android.widget.LinearLayout{4192d3c8 V.E...C. ... 0,67-460,134}
+                            android.widget.ImageView{4192dce0 V.ED.... ... 21,17-53,49 #7f0f0174 app:id/listicon}
+                            android.support.v7.widget.AppCompatTextView{4192e048 V.ED.... ... 78,14-161,53 #7f0f0175 app:id/listText}
+                          android.widget.LinearLayout{4192fa98 V.E...C. ... 0,134-460,201}
+                            android.widget.ImageView{419303b0 V.ED.... ... 21,17-53,49 #7f0f0174 app:id/listicon}
+                            android.support.v7.widget.AppCompatTextView{41930718 V.ED.... ... 78,14-197,53 #7f0f0175 app:id/listText}
+                          android.widget.LinearLayout{41932160 V.E...C. ... 0,201-460,268}
+                            android.widget.ImageView{41932a78 V.ED.... ... 21,17-53,49 #7f0f0174 app:id/listicon}
+                            android.support.v7.widget.AppCompatTextView{41932de0 V.ED.... ... 78,14-173,53 #7f0f0175 app:id/listText}
+                          android.widget.LinearLayout{41934820 V.E...C. ... 0,268-460,335}
+                            android.widget.ImageView{41935138 V.ED.... ... 21,17-53,49 #7f0f0174 app:id/listicon}
+                            android.support.v7.widget.AppCompatTextView{419354a0 V.ED.... ... 78,14-210,53 #7f0f0175 app:id/listText}
+
+  ACTIVITY com.nfortics.megapos/.Activities.Login 41ac1c80 pid=17762
+    Local Activity 41837f68 State:
+      mResumed=false mStopped=true mFinished=false
+      mLoadersStarted=false
+      mChangingConfigurations=false
+      mCurrentConfig={1.0 0mcc0mnc en_US sw768dp w768dp h976dp xlrg port finger -keyb/v/h -nav/h s.4}
+    FragmentManager misc state:
+      mCurState=3 mStateSaved=true mDestroyed=false

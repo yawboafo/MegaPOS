@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="true" >
+        <shape android:shape="oval"  >
+            <stroke android:width="1dip" android:color="#c5c8c8" />
+            <gradient  android:angle="270"  android:startColor="#a9cecaf4" android:endColor="#ffffff"  />
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape android:shape="oval"  >
+            <stroke android:width="1dip" android:color="#000000" />
+            <solid  android:color="#000000"/>
+        </shape>
+    </item>
+    <item >
+        <shape android:shape="oval"  >
+            <stroke android:width="1dip" android:color="#000000" />
+            <gradient  android:angle="270"  android:startColor="#a9e9e5f4" android:endColor="#eeeeef" />
+        </shape>
+    </item>
+</selector><!-- From: file:/C:/Users/bigfire/AndroidStudioProjects/MEGAPOS/app/src/main/res/drawable/custom_btn_beige.xml -->

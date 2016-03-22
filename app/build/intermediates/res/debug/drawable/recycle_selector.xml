@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+
+
+        <shape>
+            <solid android:color="@color/colorHighLight"></solid>
+            <stroke android:width="0.1dp" android:color="@android:color/transparent" />
+        </shape>
+
+    </item>
+
+    <item>
+
+        <shape>
+            <solid android:color="@android:color/transparent"/>
+            <stroke android:width="0.1dp" android:color="@android:color/transparent" />
+        </shape>
+    </item>
+
+</selector><!-- From: file:/C:/Users/bigfire/AndroidStudioProjects/MEGAPOS/app/src/main/res/drawable/recycle_selector.xml -->

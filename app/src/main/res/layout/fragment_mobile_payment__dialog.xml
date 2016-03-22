@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/confirmpayment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/payment_dialog_style"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="30dp">
+
+    <RelativeLayout
+        android:background="@drawable/summary_display_border"
+        android:id="@+id/mcontainerfrag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp">
+
+
+        <TextView
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Tax :"
+            android:id="@+id/mtxtTax"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/mtxtDiscount"
+            android:layout_alignStart="@+id/mtxtDiscount"
+            android:textColor="@android:color/background_light" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Discount :"
+            android:id="@+id/mtxtDiscount"
+            android:layout_below="@+id/mtxtTax"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@android:color/background_light" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Total :"
+            android:id="@+id/mtxtTotal"
+            android:layout_below="@+id/mtxtDiscount"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@android:color/background_light" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="00.0"
+            android:id="@+id/mTaxValue"
+            android:layout_alignTop="@+id/mtxtTax"
+            android:layout_toRightOf="@+id/mtxtDiscount"
+            android:layout_toEndOf="@+id/mtxtDiscount"
+            android:layout_marginLeft="60dp"
+            android:textColor="#ffff1b00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="00.0"
+            android:id="@+id/mDiscountValue"
+            android:layout_below="@+id/mTaxValue"
+            android:layout_toRightOf="@+id/mtxtDiscount"
+            android:layout_toEndOf="@+id/mtxtDiscount"
+            android:layout_marginLeft="60dp"
+            android:textColor="#ffff1b00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="00.0"
+            android:id="@+id/mTotalValue"
+            android:layout_below="@+id/mtxtDiscount"
+            android:textColor="#ffff1b00"
+            android:layout_alignRight="@+id/mDiscountValue"
+            android:layout_alignEnd="@+id/mDiscountValue"
+            android:layout_toRightOf="@+id/mtxtTotal"
+            android:layout_toEndOf="@+id/mtxtTotal"
+            android:gravity="right" />
+
+
+    </RelativeLayout>
+
+    <EditText
+        android:hint="Mobile Account Number"
+        android:background="@color/textColorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/meditAmount"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_below="@+id/mcontainerfrag"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mlessbutcontain"
+        android:layout_below="@+id/meditAmount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CheckOut"
+            android:id="@+id/mbutPay"
+            style="@style/AButton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

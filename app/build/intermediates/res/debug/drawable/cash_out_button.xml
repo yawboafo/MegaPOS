@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_enabled="false">
+        <shape>
+            <gradient android:startColor="#272727" android:endColor="#272727" android:angle="270" />
+            <stroke android:width="3px" android:color="#272727" />
+            <corners android:radius="7px" />
+            <size android:width="100px" android:height="50px" />
+        </shape>
+    </item>
+
+    <item android:state_pressed="true">
+        <shape>
+            <gradient android:startColor="#000000" android:endColor="#000000" android:angle="270" />
+            <stroke android:width="3px" android:color="#000000"/>
+            <corners android:radius="7px" />
+        </shape>
+    </item>
+
+    <item android:state_focused="true">
+        <shape>
+            <gradient android:startColor="#ff3b3c3c" android:endColor="#ff000000" android:angle="270" />
+            <stroke android:width="3px" android:color="#ff230801"/>
+            <corners android:radius="7px" />
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <gradient android:startColor="#272727" android:endColor="#272727" android:angle="270" />
+            <stroke android:width="3px" android:color="#272727" />
+            <corners android:radius="7px" />
+            <size android:width="100px" android:height="50px" />
+        </shape>
+    </item>
+
+</selector><!-- From: file:/C:/Users/bigfire/AndroidStudioProjects/MEGAPOS/app/src/main/res/drawable/cash_out_button.xml -->

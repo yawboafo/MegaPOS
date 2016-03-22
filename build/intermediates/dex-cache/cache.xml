@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\bigfire\AndroidStudioProjects\MEGAPOS\app\build\intermediates\exploded-aar\MEGAPOS\m2im835api-v2\unspecified\jars\libs\slam.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1f1597a56853517e23fa4ee892357d2b1ec174ea">
+        <dex dex="C:\Users\bigfire\AndroidStudioProjects\MEGAPOS\app\build\intermediates\pre-dexed\debug\slam-64eaa5f939cb58d2b1d72ebf1f2fc60ff5eaf174.jar" />
+    </item>
+    <item
+        jar="C:\Users\bigfire\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="C:\Users\bigfire\AndroidStudioProjects\MEGAPOS\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.0-72027a52035abbd973c618d4a2199a76229b8d53.jar" />
+    </item>
+    <item
+        jar="C:\Users\bigfire\AndroidStudioProjects\MEGAPOS\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="607d961caf1a59b6e782724654c1f3229e036c20">
+        <dex dex="C:\Users\bigfire\AndroidStudioProjects\MEGAPOS\app\build\intermediates\pre-dexed\debug\classes-a5ce31fad426498a5fd48bb72e807636acb94906.jar" />
+    </item>
+    <item
+        jar="C:\Users\bigfire\AndroidStudioProjects\MEGAPOS\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="5b37cf49773f7f17aca9830efd3053b0cac56728">
+        <dex dex="C:\Users\bigfire\AndroidStudioProjects\MEGAPOS\app\build\intermediates\pre-dexed\debug\classes-f739745bec72f6d620fa92f9fd0747efaf01347b.jar" />
+    </item>
+    <item
+        jar="C:\Users\bigfire\AndroidStudioProjects\MEGAPOS\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="C:\Users\bigfire\AndroidStudioProjects\MEGAPOS\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-66e100c65b42dd2c272ccad38c8e8276c7a17803.jar" />
+    </item>
+    <item
+        jar="C:\Users\bigfire\AndroidStudioProjects\MEGAPOS\app\build\intermediates\exploded-aar\MEGAPOS\m2im835api-v2\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="5a59227c1b17418ef566c95a23eacb0cea4a820c">
+        <dex dex="C:\Users\bigfire\AndroidStudioProjects\MEGAPOS\app\build\intermediates\pre-dexed\debug\classes-fcf58999a6a7593a2b8e20c7fcf2c3df12facf0b.jar" />
+    </item>
+    <item
+        jar="C:\Users\bigfire\AndroidStudioProjects\MEGAPOS\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="C:\Users\bigfire\AndroidStudioProjects\MEGAPOS\app\build\intermediates\pre-dexed\debug\classes-31b6baea7f00ac84d1ae11d81b561b9cacc73320.jar" />
+    </item>
+    <item
+        jar="C:\Users\bigfire\AndroidStudioProjects\MEGAPOS\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="C:\Users\bigfire\AndroidStudioProjects\MEGAPOS\app\build\intermediates\pre-dexed\debug\classes-89d11e5edf67616c286dd088665f502460f32d8a.jar" />
+    </item>
+    <item
+        jar="C:\Users\bigfire\AndroidStudioProjects\MEGAPOS\app\build\intermediates\exploded-aar\com.android.support\design\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="fc63b820d54c8a27a3a614bdd93920e0076581c2">
+        <dex dex="C:\Users\bigfire\AndroidStudioProjects\MEGAPOS\app\build\intermediates\pre-dexed\debug\classes-ca62d6f220b422f4c649ada9d621562ee2dad692.jar" />
+    </item>
+    <item
+        jar="C:\Users\bigfire\AndroidStudioProjects\MEGAPOS\gson-2.1\gson-2.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="bd858833cacb4e6742f7698649fb874a360e230f">
+        <dex dex="C:\Users\bigfire\AndroidStudioProjects\MEGAPOS\app\build\intermediates\pre-dexed\debug\gson-2.1-e2ccfc364bfbd932e9a4f83c8ce9026066b75410.jar" />
+    </item>
+    <item
+        jar="C:\Users\bigfire\AndroidStudioProjects\MEGAPOS\app\build\intermediates\exploded-aar\MEGAPOS\m2im835api-v2\unspecified\jars\libs\acssmc-1.1.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="08cfa6809b14291ddb10f650b0d5ff12223fd7e1">
+        <dex dex="C:\Users\bigfire\AndroidStudioProjects\MEGAPOS\app\build\intermediates\pre-dexed\debug\acssmc-1.1.2-8001699c87ad547f8edc3ab63415e06cdc503b36.jar" />
+    </item>
+    <item
+        jar="C:\Users\bigfire\.gradle\caches\modules-2\files-2.1\com.mcxiaoke.volley\library\1.0.17\f417d7f776d1ee5858fc04d9362aa45e9bedd26b\library-1.0.17.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="f417d7f776d1ee5858fc04d9362aa45e9bedd26b">
+        <dex dex="C:\Users\bigfire\AndroidStudioProjects\MEGAPOS\app\build\intermediates\pre-dexed\debug\library-1.0.17-9d9bc447d9ecfaae2eb5d07d1e68c08d967ea824.jar" />
+    </item>
+    <item
+        jar="C:\Users\bigfire\.gradle\caches\modules-2\files-2.1\com.loopj.android\android-async-http\1.4.8\77bbfe240e437ecb396d982afa0d3bd4f9090ba7\android-async-http-1.4.8.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="77bbfe240e437ecb396d982afa0d3bd4f9090ba7">
+        <dex dex="C:\Users\bigfire\AndroidStudioProjects\MEGAPOS\app\build\intermediates\pre-dexed\debug\android-async-http-1.4.8-48ef40067662a66264728517164062ca598c7613.jar" />
+    </item>
+    <item
+        jar="C:\Users\bigfire\AndroidStudioProjects\MEGAPOS\app\build\intermediates\exploded-aar\MEGAPOS\m2im835api-v2\unspecified\jars\libs\MposApi_V1.00.01_20140707.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="28b3c5696af189e08a13af807dd3b38e079066b6">
+        <dex dex="C:\Users\bigfire\AndroidStudioProjects\MEGAPOS\app\build\intermediates\pre-dexed\debug\MposApi_V1.00.01_20140707-6378374d83a1a64709451d7be08ea24e527b1f92.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.nfortics.megapos.Fragments.Stocking">
+
+
+
+    <RelativeLayout
+        android:background="@drawable/right_border_layout"
+        android:layout_width="200dp"
+        android:id="@+id/leftContainer"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:padding="0dp">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:text="@string/all_items"
+            android:id="@+id/butAll_items"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:text="@string/stock_categories"
+            android:id="@+id/butAll_categories"
+            android:layout_below="@+id/butAll_items"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:text="@string/but_all_discount"
+            android:id="@+id/butAll_discount"
+            android:layout_below="@+id/butAll_categories"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:enabled="false" />
+
+
+    </RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/rightContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_toRightOf="@+id/leftContainer"
+    android:layout_toEndOf="@+id/leftContainer">
+
+
+    <EditText
+        android:drawableLeft="@drawable/searhicon"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/edtSearch"
+        android:hint="@string/search_all_items"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtSearch"
+        android:id="@+id/create_button_holder"
+        android:layout_margin="10dp">
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:text="Create Item"
+            android:id="@+id/butCreate"
+
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+         android:layout_below="@+id/create_button_holder"
+         android:id="@+id/itemsHolder"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+         <android.support.v7.widget.RecyclerView
+             android:background="@android:color/transparent"
+             android:id="@+id/AllItems"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:paddingLeft="5dp"
+             android:paddingRight="5dp"
+             android:paddingTop="6dp"
+             android:layout_gravity="right|top"
+             android:layout_marginTop="1dp"
+             android:layout_alignParentRight="true"
+             android:layout_alignParentEnd="true"
+             android:layout_marginRight="4dp"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentStart="true"
+             android:layout_above="@+id/butLongDelete">
+
+         </android.support.v7.widget.RecyclerView>
+
+        <Button
+            style="@style/btnStyleRed"
+            android:layout_margin="5dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:id="@+id/butLongDelete"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
+</RelativeLayout>
+<!-- From: file:/C:/Users/bigfire/AndroidStudioProjects/MEGAPOS/app/src/main/res/layout/fragment_stocking.xml -->

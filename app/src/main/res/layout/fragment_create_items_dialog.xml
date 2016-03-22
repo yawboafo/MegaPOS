@@ -1,0 +1,173 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+
+    tools:context="com.nfortics.megapos.Dialogs.CreateItemsDialog">
+
+
+    <RelativeLayout
+        android:id="@+id/mainItemsHolder"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:paddingBottom="2dp"
+        android:layout_alignParentTop="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutCreateItems">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/edtPrice"
+                android:hint="Price"
+                android:layout_below="@+id/buttAddCategory"
+                android:layout_alignRight="@+id/edtName"
+                android:layout_alignEnd="@+id/edtName"
+                android:layout_alignLeft="@+id/edtName"
+                android:layout_alignStart="@+id/edtName"
+                android:layout_margin="5dp" />
+
+            <Button
+                android:drawableRight="@drawable/forward"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:text="Category"
+                android:background="@android:color/transparent"
+                android:id="@+id/buttAddCategory"
+                android:gravity="left|center"
+                android:layout_below="@+id/edtName"
+                android:layout_alignLeft="@+id/edtName"
+                android:layout_alignStart="@+id/edtName"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="5dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/edtName"
+                android:layout_centerHorizontal="true"
+                android:hint="Name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/edtISBN"
+                android:layout_margin="5dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/edtISBN"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/edtPrice"
+                android:layout_alignEnd="@+id/edtPrice"
+                android:layout_alignLeft="@+id/edtName"
+                android:layout_alignStart="@+id/edtName"
+                android:hint="ISBN"
+                android:layout_margin="5dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutCreateCategory"
+            android:paddingBottom="20dp"
+            android:visibility="gone">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/editcategoryName"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:hint="Name" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutCategoryNames"
+                android:layout_below="@+id/editcategoryName">
+                <android.support.v7.widget.RecyclerView
+                    android:background="@android:color/transparent"
+                    android:id="@+id/categoryVales"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="6dp"
+                    android:layout_gravity="right|top"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true">
+
+                </android.support.v7.widget.RecyclerView>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/selectedCategory"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp" />
+
+        <Button
+
+            android:layout_width="200dp"
+            android:padding="10dp"
+            android:layout_height="50dp"
+            android:text="Delete"
+            android:textColor="@android:color/holo_red_dark"
+            android:id="@+id/deleteItems"
+            android:layout_alignTop="@+id/selectedCategory"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/topButtonHolder"
+        android:padding="10dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:layout_below="@+id/mainItemsHolder"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/butSave"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:padding="5dp" />
+
+        <Button
+            android:drawableLeft="@drawable/close"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Item "
+            android:id="@+id/butCancel"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+</RelativeLayout>

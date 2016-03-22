@@ -1,0 +1,137 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EEE"
+    tools:context="com.nfortics.ozimbosmall.NavigationDrawerFragment">
+
+
+
+    <LinearLayout
+        android:id="@+id/nav_header_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/limeOne"
+        android:weightSum="1"
+        android:orientation="vertical"
+        >
+
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp">
+
+
+            <ImageView
+                android:id="@+id/profileimg"
+                android:layout_width="108dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_profile"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.36" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Log Out"
+                android:id="@+id/txtLogout"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/profileimg"
+                android:textStyle="bold"
+                android:textColor="#ffffff" />
+
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Akosua Menu"
+            android:id="@+id/txtUsername"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="User Id :7819120"
+            android:id="@+id/txtUserid"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nav_header_container"
+        >
+
+        <LinearLayout
+            android:id="@+id/ListOne"
+            android:orientation="vertical"
+            android:background="#FFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:showDividers="end">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:textColor="#000"
+                android:id="@+id/ListOneTitle"
+                android:padding="20dp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:background="@android:color/white"
+                android:layout_below="@+id/nav_header_container"
+                android:id="@+id/drawerlistOne"
+                android:layout_width="match_parent"
+                android:layout_height="350dp">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ListTwo"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:background="#FFF"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/ListOne">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:textColor="#000"
+                android:id="@+id/ListTwoTitle"
+                android:padding="20dp"
+                android:textStyle="bold"
+                android:background="#272727"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.RecyclerView
+                android:background="@android:color/white"
+                android:id="@+id/drawerlistTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

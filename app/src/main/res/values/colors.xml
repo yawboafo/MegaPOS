@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#FFEB3B</color>
+    <color name="primaryColorDark">#FBC02D</color>
+    <color name="accentColor">#50514F</color>
+    <color name="colorPrimary">#F50057</color>
+    <color name="colorPrimaryDark">#C51162</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#FF80AB</color>
+    <color name="limeOne">#272727</color>
+    <color name="limeprime">#AFB42B</color>
+    <color name="fakewhite">#F0F4C3</color>
+    <color name="amber">#FFC107</color>
+    <color name="colorHighLight">#B6B6B6</color>
+</resources>

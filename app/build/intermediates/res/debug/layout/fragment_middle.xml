@@ -1,0 +1,89 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nfortics.megapos.Fragments.InnerFragments.MiddleFragment">
+
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:id="@+id/edtIsbn"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:hint="Isbn" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CategorySpinner"
+        android:layout_below="@+id/edtName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/butCategory"
+        android:layout_toStartOf="@+id/butCategory"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Create Category"
+        android:id="@+id/butCategory"
+        android:layout_alignBottom="@+id/CategorySpinner"
+        android:layout_toRightOf="@+id/edtIsbn"
+        android:layout_toEndOf="@+id/edtIsbn"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:id="@+id/edtName"
+        android:layout_below="@+id/edtIsbn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:hint="Name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/edtPrice"
+        android:layout_below="@+id/CategorySpinner"
+        android:layout_alignRight="@+id/CategorySpinner"
+        android:layout_alignEnd="@+id/CategorySpinner"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:hint="Price" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Leave the Price Blank to enter at the Time of Sale"
+        android:id="@+id/labelPrice"
+        android:layout_below="@+id/edtPrice"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:text="SAVE"
+        android:id="@+id/butSave"
+        android:layout_alignTop="@+id/edtIsbn"
+        android:layout_alignRight="@+id/labelPrice"
+        android:layout_alignEnd="@+id/labelPrice" />
+</RelativeLayout>
+<!-- From: file:/C:/Users/bigfire/AndroidStudioProjects/MEGAPOS/app/src/main/res/layout/fragment_middle.xml -->

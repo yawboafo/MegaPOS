@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    tools:context="com.nfortics.megapos.Fragments.BillPayFragment"
+    android:id="@+id/mainLayout"
+    android:gravity="center_vertical|center|center_horizontal">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Provider :"
+        android:id="@+id/textView8"
+        android:layout_marginTop="117dp"
+        android:layout_below="@+id/progressBar"
+        android:layout_alignRight="@+id/txtAmount"
+        android:layout_alignEnd="@+id/txtAmount" />
+
+    <Spinner
+
+        style="@style/btnStylemedium_wood"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:id="@+id/ProviderSpinner"
+        android:layout_alignTop="@+id/textView8"
+        android:layout_alignRight="@+id/butCancel"
+        android:layout_alignEnd="@+id/butCancel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Bill Reference :"
+        android:id="@+id/txtBillreference"
+        android:layout_marginTop="65dp"
+        android:layout_below="@+id/ProviderSpinner"
+        android:layout_alignLeft="@+id/txtAmount"
+        android:layout_alignStart="@+id/txtAmount" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editBillreference"
+        android:layout_alignBottom="@+id/txtBillreference"
+        android:layout_alignLeft="@+id/ProviderSpinner"
+        android:layout_alignStart="@+id/ProviderSpinner"
+        android:layout_alignRight="@+id/butCancel"
+        android:layout_alignEnd="@+id/butCancel" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editMoney"
+        android:layout_alignBottom="@+id/txtAmount"
+        android:layout_alignLeft="@+id/editBillreference"
+        android:layout_alignStart="@+id/editBillreference"
+        android:layout_alignRight="@+id/butCancel"
+        android:layout_alignEnd="@+id/butCancel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Amount : "
+        android:id="@+id/txtAmount"
+        android:layout_marginTop="54dp"
+        android:layout_below="@+id/txtBillreference"
+        android:layout_marginLeft="74dp"
+        android:layout_marginStart="74dp" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/progressBar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+
+        android:indeterminate="false"
+        android:visibility="gone" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:text="SUBMIT"
+        android:id="@+id/butSubmit"
+        android:layout_below="@+id/editMoney"
+        android:layout_toRightOf="@+id/txtAmount"
+        android:layout_toEndOf="@+id/txtAmount"
+        android:layout_margin="30dp" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:text="CANCEL"
+        android:id="@+id/butCancel"
+        android:layout_below="@+id/editMoney"
+        android:layout_toRightOf="@+id/butSubmit"
+        android:visibility="invisible"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp" />
+</RelativeLayout>
+<!-- From: file:/C:/Users/bigfire/AndroidStudioProjects/MEGAPOS/app/src/main/res/layout/fragment_bill_pay.xml -->

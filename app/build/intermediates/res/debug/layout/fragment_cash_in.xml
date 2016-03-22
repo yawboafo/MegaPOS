@@ -1,0 +1,525 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.nfortics.megapos.Dialogs.CashIn"
+
+    android:paddingLeft="20dp"
+    android:paddingTop="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="2dp">
+
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:id="@+id/buttonHolder"
+        android:paddingBottom="0dp"
+        android:layout_below="@+id/centerMainButtonHolder"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp">
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Submit"
+            android:id="@+id/butSubmit"
+            android:padding="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/butBack"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="2dp" />
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Back"
+            android:id="@+id/butBack"
+            android:padding="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="2dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/centerMainButtonHolder"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_below="@+id/txtDialogTitle">
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Bank Account"
+            android:id="@+id/butBankAc"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:padding="20dp"
+            android:layout_margin="2dp" />
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Prepaid Card"
+            android:id="@+id/butPrepaidC"
+            android:layout_below="@+id/butMobileM"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/butMobileM"
+            android:layout_alignEnd="@+id/butMobileM"
+            android:padding="20dp"
+            android:layout_margin="2dp" />
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Mobile Money"
+            android:id="@+id/butMobileM"
+            android:layout_below="@+id/butBankAc"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:padding="20dp"
+            android:layout_margin="2dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/PrepaidCardLayout"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Select Vendor :"
+                android:id="@+id/txtSelectVendor"
+                android:layout_margin="5dp"
+                android:textStyle="bold" />
+
+            <Spinner
+
+                android:popupBackground="#ffffe58e"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/prepaidVendorsSpinner"
+                android:padding="10dp"
+                android:layout_below="@+id/txtSelectVendor"
+                android:layout_margin="5dp" />
+
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtCardNumber"
+                android:layout_below="@+id/txtCardNumber"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="5dp" />
+
+
+            <TextView
+                android:layout_below="@+id/edtCardNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Enter Amount :"
+                android:id="@+id/txtPrepaidEnterAmtLabel"
+                android:layout_margin="5dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_below="@+id/txtPrepaidEnterAmtLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/edtPrepAmount"
+                android:layout_margin="5dp" />
+
+            <TextView
+                android:layout_below="@+id/prepaidVendorsSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Card Number :"
+                android:id="@+id/txtCardNumber"
+                android:layout_centerVertical="true"
+                android:layout_alignLeft="@+id/edtCardNumber"
+                android:layout_alignStart="@+id/edtCardNumber"
+                android:textStyle="bold"
+                android:layout_margin="5dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeActions"
+            android:visibility="gone">
+
+            <Spinner
+                style="@style/btnStylemedium_wood"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerBanks"
+                android:spinnerMode="dropdown"
+                android:layout_below="@+id/txtSelectBankLabel"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:popupBackground="#ffffe58e" />
+
+            <Spinner
+                style="@style/btnStylemedium_wood"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerAcpType"
+                android:spinnerMode="dropdown"
+                android:layout_below="@+id/txtIdentifyLabel"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:popupBackground="#ffffe58e" />
+
+            <RelativeLayout
+                android:layout_below="@+id/spinnerAcpType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutFinger"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/ivImageViewer"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="3dp"
+                    android:adjustViewBounds="false"
+                    android:background="#ff99aa"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"  />
+
+                <TextView
+                    android:layout_below="@+id/ivImageViewer"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Biometric Not enabled"
+                    android:id="@+id/txtStatus"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtFingerUserID"
+                    android:layout_below="@+id/txtStatus"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center_vertical" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Biometrics"
+                    android:id="@+id/butFingerPrint"
+                    android:layout_below="@+id/edtFingerUserID"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Select Bank : "
+                android:id="@+id/txtSelectBankLabel"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="5dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Identify : "
+                android:id="@+id/txtIdentifyLabel"
+                android:layout_below="@+id/spinnerBanks"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="5dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/edtBankAcValue"
+                android:layout_below="@+id/txtBackAcLabel"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_alignRight="@+id/txtEnterAmtLabel"
+                android:layout_alignEnd="@+id/txtEnterAmtLabel"
+                android:hint="eg Uni2131...." />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtBankAmount"
+                android:inputType="numberDecimal"
+                android:layout_below="@+id/txtEnterAmtLabel"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="5dp"
+                android:hint="eg 200.0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Enter BankAccount # :"
+                android:id="@+id/txtBackAcLabel"
+                android:layout_below="@+id/spinnerAcpType"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="5dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Enter Amount :"
+                android:id="@+id/txtEnterAmtLabel"
+                android:layout_below="@+id/edtBankAcValue"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="5dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/MobileMoneyLayout"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Telco :"
+                android:id="@+id/txtSelectTelco"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_margin="5dp" />
+
+            <Spinner
+
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerTelcos"
+                android:layout_below="@+id/txtSelectTelco"
+                android:layout_margin="5dp"
+                android:popupBackground="#ffffe58e" />
+
+            <TextView
+
+                android:layout_below="@+id/spinnerTelcos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Mobile Account :"
+                android:id="@+id/txtentermobileAcLabel"
+                android:layout_margin="5dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_below="@+id/txtentermobileAcLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtMobileAcc"
+                android:layout_margin="5dp"
+                android:hint="eg 0208173179.."
+                android:phoneNumber="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Enter Amount :"
+                android:id="@+id/txtEnterAmountLabel"
+                android:layout_alignRight="@+id/edtMobileAcc"
+                android:layout_alignEnd="@+id/edtMobileAcc"
+                android:layout_below="@+id/edtMobileAcc"
+                android:layout_alignLeft="@+id/edtMobileAcc"
+                android:layout_alignStart="@+id/edtMobileAcc"
+                android:textStyle="bold"
+                android:layout_margin="5dp" />
+
+            <EditText
+                android:layout_below="@+id/txtEnterAmountLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/editEnterAmount"
+                android:layout_margin="5dp"
+                android:hint="Eg 200.." />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/confirmLayout"
+            android:visibility="gone">
+
+            <Button
+
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:id="@+id/confirmYesButton"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp" />
+
+            <Button
+
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/confirmNoButton"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_above="@+id/confirmYesButton"
+                android:id="@+id/confirmScreen"
+                android:background="#ff000000"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="confirm1"
+                    android:id="@+id/txtconfirm1"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="#ffffffff"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="confirm2"
+                    android:id="@+id/txtconfirm2"
+                    android:layout_below="@+id/txtconfirm1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="#fffdfff8" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="confirm3"
+                    android:id="@+id/txtconfirm3"
+                    android:layout_below="@+id/txtconfirm2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="#fffdfff8" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="confirm4"
+                    android:id="@+id/txtconfirm4"
+                    android:layout_below="@+id/txtconfirm3"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="#fffdfff8" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Cash In"
+        android:id="@+id/txtDialogTitle"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_alignLeft="@+id/centerMainButtonHolder"
+        android:layout_alignStart="@+id/centerMainButtonHolder"
+        android:layout_alignRight="@+id/centerMainButtonHolder"
+        android:layout_alignEnd="@+id/centerMainButtonHolder"
+        android:paddingBottom="5dp"
+        android:paddingTop="3dp" />
+
+</RelativeLayout>
+
+<!-- From: file:/C:/Users/bigfire/AndroidStudioProjects/MEGAPOS/app/src/main/res/layout/fragment_cash_in.xml -->
